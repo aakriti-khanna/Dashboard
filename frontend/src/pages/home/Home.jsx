@@ -129,7 +129,7 @@ fetch(`${process.env.REACT_APP_SERVER_URL}/getTopnews`)
           
           <Widget data={data} heading={"TOP 5 SOURCES"} />
            {/* <Widget className="widget" data={Trendingnews} />  */}
-          <Widget className="widgets"  data={crud}  heading={"TOP HEADLINES"}  />
+          <Widget className="widgets"  crud={Trendingnews}  heading={"TOP HEADLINES"}  />
         </div>
         <div className="charts">
           <div className="heading">
@@ -156,7 +156,7 @@ fetch(`${process.env.REACT_APP_SERVER_URL}/getTopnews`)
         </div>
           <div className='heading-pie'>
             <h3>News of these Sector</h3>
-          <div className="piechart"><PieChart data={piedata} /></div>
+          <div className="piechart"><PieChart data={myData} /></div>
           </div>
           
 

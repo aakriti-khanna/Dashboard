@@ -21,14 +21,11 @@ function App() {
   let [histoData ,setHistoData] = useState([]);
   let [heatmapdata ,setHeatmapData]=useState([])
   // let[linechart,setLinechartData]=useState(randomData);
-  let[myImpactingData,setImpactingData]=useState([]);
+  // let[myImpactingData,setImpactingData]=useState([]);
   let[donutData,setDonutData]=useState([]);
   let [Trendingnews,setTrendingnews]=useState([]);
   // console.log("linechardata" ,linechart);
-  
 
-
- 
   
 
   return (
