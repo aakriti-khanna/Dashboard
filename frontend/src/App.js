@@ -48,7 +48,7 @@ fetch('http://localhost:4444/getTopicWiseData')
 
 // Assuming you're using fetch API or axios for making HTTP requests
 
-  fetch('http://localhost:4444/getFilterWiseData')
+  fetch(`${process.env.REACT_APP_SERVER_URL}/getTopicWiseData`)
   .then(response => response.json())
   .then((data) => {
     console.log("App filterrrr data", data.data);
@@ -84,7 +84,7 @@ fetch('http://localhost:4444/getdonut')
 
 
 
-fetch('http://localhost:4444/getHeatmap')
+fetch(`${process.env.REACT_APP_SERVER_URL}/getHeatmap`)
 .then(response=> response.json())
 .then((data) => {
     // console.log("App data", data)
@@ -97,21 +97,6 @@ fetch('http://localhost:4444/getHeatmap')
     console.log("heattttmapppppleloo",d);
   
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // fetch('http://localhost:4444/getFilterWiseData')
@@ -161,7 +146,7 @@ fetch('http://localhost:4444/countryWiseDta')
     
 })
 
-fetch('http://localhost:4444/getImpactingData')
+fetch(`${process.env.REACT_APP_SERVER_URL}/getImpactingData`)
 .then(response=> response.json())
 .then((data) => {
     // console.log("Sourcedata", data)
