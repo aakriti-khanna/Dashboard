@@ -5,7 +5,7 @@ import './Heatmap.scss'; // Import CSS file for styling
 const Heatmap = ({ data }) => {
   const svgRef = useRef(null);
   const margin = { top: 30, right: 30, bottom: 30, left: 30 };
-  const width = 600 - margin.left - margin.right;
+  const width = 700 - margin.left - margin.right;
   const height = 400 - margin.top - margin.bottom;
 
   useEffect(() => {

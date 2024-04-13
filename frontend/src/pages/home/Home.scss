@@ -19,50 +19,55 @@
 
          
          .heading {
-          // box-shadow: 2px 4px 10px 1px #c9c9c990;
-          width: 440px;
-          height: 480px;
+          display: flex;
+          justify-content: center;
+          // border:1px solid black;
+          flex-direction: column;
+          text-align: center;
+          box-shadow: 2px 4px 10px 1px #c9c9c990;
+          // width: 440px;
+          // height: 480px;
           margin-bottom: 10px;
          }
 
          .donutchart{
           margin-top: 20px;
-          width: 400px;
+          width: 350px;
           height: 350px;
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 10px;
-        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        // box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
          }
          .histochart{
           margin-top: 20px;
-          width: 800px;
+          width: 700px;
           height: 350px;
           border-radius: 10px;
-        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        // box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
          }
 
          .piechart{
           margin-top: 20px;
           border-radius: 10px;
-          width: 550px;
+          width: 650px;
           height: 500px;
           display: flex;
           justify-content: center;
           align-items: center;
-        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        // box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
          }
          
          .heatmap{
           margin-top: 20px;
-          width: 620px;
+          width: 900px;
           height: 420px;
           border-radius: 10px;
-        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        // box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
          }
 
-         .heading-heat{
+         .heading{
           color: #7451f8;;
           border-bottom: 1px solid bottom #7451f8; ;
           font-size: large;

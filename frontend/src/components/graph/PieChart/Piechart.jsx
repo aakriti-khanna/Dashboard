@@ -3,11 +3,11 @@ import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
 import './Piechart.scss'; // Import SCSS file
 
-const PieChart = ({ data, width = 500, height = 300 }) => {
+const PieChart = ({ data, width = 600, height = 300 }) => {
   const svgRef = useRef();
   const tooltipRef = useRef();
   const legendContain=useRef();
-console.log("jkkkkkkkkkkkkkkkk",data);
+
   useEffect(() => {
     const svg = d3.select(svgRef.current)
       .attr('width', width)
