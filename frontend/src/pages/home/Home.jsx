@@ -8,8 +8,7 @@ import PieChart from '../../components/graph/PieChart/Piechart';
 import Histogram from '../../components/graph/Histogram/Histogram';
 import DonutChart from '../../components/graph/Donut/Donut';
 import Heatmap from '../../components/graph/Heatmap/Heatmap';
-
-
+//krdiaaa!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function Home({data,piedata,crud}) {
   let [histoData ,setHistoData] = useState([]);
   let[mySourceData,setmySourceData]= useState([]);
@@ -18,16 +17,13 @@ function Home({data,piedata,crud}) {
   let[donutData,setDonutData]=useState([]);
   let [heatmapdata ,setHeatmapData]=useState([])
   let[Trendingnews,setTrendingnews]=useState([]);
-
-
-
-
    
  useEffect(() =>{
-  fetch('http://localhost:4444/getTopicWiseData')
+  fetch(`${process.env.REACT_APP_SERVER_URL}/getTopicWiseData`)
   .then(response=> response.json())
   .then((data) => {
       console.log("App data", data)
+      console.log(process.env.REACT_APP_SERVER_URL)
       let d = data.answer.map(o => {
        
         return {"label":o._id == "" ? 'other' : o._id ,"value": o.count}
@@ -36,7 +32,7 @@ function Home({data,piedata,crud}) {
       setmyData(d)
       console.log("pieeedata",myData);
 
-fetch('http://localhost:4444/getHeatmap')
+fetch(`${process.env.REACT_APP_SERVER_URL}/getHeatmap`)
 .then(response=> response.json())
 .then((data) => {
     // console.log("App data", data)
@@ -48,7 +44,7 @@ fetch('http://localhost:4444/getHeatmap')
     console.log("heattttmapppppleloo",d);
 })
 
- fetch('http://localhost:4444/getImpactingData')
+ fetch(`${process.env.REACT_APP_SERVER_URL}/getImpactingData`)
 .then(response=> response.json())
 .then((data) => {
     // console.log("Sourcedata", data)
@@ -63,7 +59,7 @@ fetch('http://localhost:4444/getHeatmap')
   })
   
   
-  fetch('http://localhost:4444/getdonut')
+  fetch(`${process.env.REACT_APP_SERVER_URL}/getdonut`)
   .then(response=> response.json())
   .then((data) => {
       console.log("App donuuuuuuuuuttttttttttttttttt", data)
@@ -76,7 +72,7 @@ fetch('http://localhost:4444/getHeatmap')
       // console.log("donutttttkhaloo",d);
   })
 
-  fetch('http://localhost:4444/countryWiseDta')
+  fetch(`${process.env.REACT_APP_SERVER_URL}/countryWiseDta`)
   .then(response=> response.json())
   .then((data) => {
   
@@ -92,7 +88,7 @@ fetch('http://localhost:4444/getHeatmap')
   })
 
  
-fetch('http://localhost:4444/getTopnews')
+fetch(`${process.env.REACT_APP_SERVER_URL}/getTopnews`)
 .then(response=> response.json())
 .then((data) => {
   console.log(" newsssssssssssApp data", data)
@@ -108,7 +104,7 @@ fetch('http://localhost:4444/getTopnews')
 
   
   
-  fetch('http://localhost:4444/getSourceWiseData')
+  fetch(`${process.env.REACT_APP_SERVER_URL}/getSourceWiseData`)
   .then(response=> response.json())
   .then((data) => {
       console.log("Sourcedata", data)
@@ -122,6 +118,7 @@ fetch('http://localhost:4444/getTopnews')
     
   },[])
 
+// now do this for all endpoints 😊 whattt can u tell me
 
   return (
     <div className="home">
