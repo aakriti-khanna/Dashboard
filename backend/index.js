@@ -5,24 +5,24 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const cors = require("cors");
 const PORT = 4444;
-const corsConfig = {
-  origin: "*",
+// const corsConfig = {
+//   origin: "*",
+// "method":["GET", "POST", "PUT", "DELETE" ,"PATCH" ,"OPTIONS"]
+//   credential: true,
 
-  credential: true,
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+// };
+// app.options("",cors(corsConfig));
 
-  methods: ["GET", "POST", "PUT", "DELETE"],
-};
-app.options("",cors(corsConfig));
-
-app.use(cors(corsConfig));
+// app.use(cors(corsConfig));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(
-  cors({
-    origin: process.env.CLIENT_URL,
-  })
-);
+// app.use(
+//   cors({
+//     origin: process.env.CLIENT_URL,
+//   })
+// );
 app.use("/", require("./router/routes"));
 
 mongoose
