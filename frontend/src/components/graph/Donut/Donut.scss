@@ -1,0 +1,13 @@
+
+.arc {
+    cursor: pointer; /* Add cursor pointer to arcs */
+  }
+  
+  .arc path {
+    stroke: #fff; /* Add stroke to path */
+  }
+  
+  .arc text {
+    fill: #fff; /* Add fill color to text */
+    font-family: Arial, sans-serif; /* Specify font family */
+  }

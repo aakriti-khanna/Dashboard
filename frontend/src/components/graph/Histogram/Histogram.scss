@@ -1,0 +1,34 @@
+.histogram-svg {
+    overflow: visible; /* Allow overflow for animations */
+  }
+  
+  .bar {
+    fill: steelblue;
+    transition: height 0.5s, y 0.5s; /* Add transition for height and y position */
+  }
+  
+  .x-axis path,
+  .y-axis path {
+    fill: none;
+    stroke: #000;
+  }
+  
+  .x-axis line,
+  .y-axis line {
+    fill: none;
+    stroke: #000;
+  }
+  
+  .x-axis text,
+  .y-axis text {
+    font-size: 14px;
+  }
+  
+  .x-axis text {
+    text-anchor: middle;
+  }
+  
+  .y-axis text {
+    text-anchor: middle;
+  }
+  

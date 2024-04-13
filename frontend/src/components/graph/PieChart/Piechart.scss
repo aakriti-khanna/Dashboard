@@ -1,0 +1,163 @@
+// // .legend-text {
+// //     font-family: Arial, sans-serif;
+// //     font-size: 23px;
+// //     fill: #333;
+// //     border:1px solid black ;
+// //   }
+// //   .rect{
+// //     border: 1px solid black;
+
+// //   }
+// .pie-chart-container {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+  
+//   .legend-item {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 5px; /* Adjust as needed */
+//   }
+  
+//   .legend-color {
+//     width: 10px;
+//     height: 10px;
+//     margin-right: 5px;
+//   }
+  
+//   .legend-label {
+//     font-size: 14px;
+//   }
+  
+
+// PieChart.scss
+
+/* PieChart.scss */
+
+// .pie-chart-container {
+//     position: relative; /* Ensure tooltip positioning relative to this container */
+//   }
+  
+//   .tooltip {
+//     position: absolute;
+//     background-color: rgba(0, 0, 0, 0.8);
+//     color: #fff;
+//     padding: 5px 10px;
+//     border-radius: 5px;
+//     pointer-events: none; /* Ensure tooltip doesn't interfere with pointer events */
+//     opacity: 0; /* Initially hidden */
+//     transition: opacity 0.3s ease-in-out;
+//   }
+  
+//   /* Adjust tooltip styles as needed */
+  
+//   .legend {
+//     font-family: Arial, sans-serif;
+//     font-size: 12px;
+//   }
+  
+//   .legend rect {
+//     width: 10px;
+//     height: 10px;
+//     fill-opacity: 0.8;
+   
+//   }
+  
+//   .legend-text {
+//     alignment-baseline: middle;
+//     dominant-baseline: middle;
+//     text-anchor: start;
+//     font-size: 12px;
+//     fill: #000;
+//   }
+  
+  
+
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    // border: 1px solid black;
+}
+
+
+.pie-chart-container {
+    // display: flex;
+    // border: 1px solid black;
+    padding: 10px;
+    // margin: auto;
+    margin-top: 140px;
+}
+  
+.chart-container {
+    // flex: 1;
+    // width: 200px;
+ 
+  }
+
+  .legend {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    // position: absolute;
+    border: 1px solid black;
+  }
+  
+  .legend rect {
+    width: 10px;
+    height: 10px;
+    fill-opacity: 0.8;
+    margin-right: 5px; /* Add margin between rect and text */
+    border: 1px solid black;
+  }
+  
+  .legend-text {
+    alignment-baseline: middle;
+    dominant-baseline: middle;
+    font-size: 12px;
+    fill: #000;
+  }
+  
+  
+  .legend-container {
+    // flex: 0 0 auto; /* Allow legend container to shrink */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+    width: 30%;
+    border: 1px solid blue;
+    // align-items: center;
+  }
+  
+//   .legend {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 5px;
+//   }
+  
+//   .legend-color {
+//     width: 20px;
+//     height: 20px;
+//     margin-right: 5px;
+//   }
+  
+//   .legend-text {
+//     font-size: 14px;
+//   }
+  
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    pointer-events: none; /* Ensure tooltip doesn't interfere with pointer events */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+  }
+  

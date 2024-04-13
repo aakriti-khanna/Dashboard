@@ -1,0 +1,21 @@
+.heatmap-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heatmap-svg {
+    border: 1px solid #ccc; /* Add border for the SVG */
+  }
+  
+  .heatmap-label {
+    fill: #333; /* Text color */
+    font-size: 12px; /* Font size */
+    text-anchor: middle; /* Center text horizontally */
+  }
+  
+  .heatmap-rect {
+    stroke: none; /* Remove stroke */
+  }

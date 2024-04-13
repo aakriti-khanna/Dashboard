@@ -1,0 +1,108 @@
+.home {
+    display: flex;
+  
+    .homeContainer {
+      flex: 6;
+  
+      .widgets,
+      .charts {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+        // height: 30vw;
+        
+         
+         .widget{
+          min-width: 250px;
+         }
+
+         
+         .heading {
+          // box-shadow: 2px 4px 10px 1px #c9c9c990;
+          width: 440px;
+          height: 480px;
+          margin-bottom: 10px;
+         }
+
+         .donutchart{
+          margin-top: 20px;
+          width: 400px;
+          height: 350px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+         }
+         .histochart{
+          margin-top: 20px;
+          width: 800px;
+          height: 350px;
+          border-radius: 10px;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+         }
+
+         .piechart{
+          margin-top: 20px;
+          border-radius: 10px;
+          width: 550px;
+          height: 500px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+         }
+         
+         .heatmap{
+          margin-top: 20px;
+          width: 620px;
+          height: 420px;
+          border-radius: 10px;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+         }
+
+         .heading-heat{
+          color: #7451f8;;
+          border-bottom: 1px solid bottom #7451f8; ;
+          font-size: large;
+         
+       }
+
+         .heading-pie{
+            color: #7451f8;;
+            border-bottom: 1px solid bottom #7451f8; ;
+            font-size: larger;
+           
+         }
+         .heading {
+          color: #7451f8;;
+          border-bottom: 1px solid bottom #7451f8; ;
+          font-size: larger;
+         
+       }
+
+         .heading-histo {
+          color: #7451f8;;
+          border-bottom: 1px solid bottom #7451f8; ;
+          font-size: large;
+         
+       }
+      }
+  
+
+  
+      .listContainer {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        margin: 20px;
+  
+        .listTitle {
+          font-weight: 500;
+          color: gray;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
